@@ -1,0 +1,654 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*Backgrounds */
+body.home
+{ 
+  display:grid;
+  background-image: url(images/g2.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+body.contact
+{ 
+  display:grid;
+  background-image: url(images/g1.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+body.events
+{ 
+  display:grid;
+  background-image: url(images/g5.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+
+body.courses
+{ 
+  display:grid;
+  background-image: url(images/g4.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+body.gallery
+{ 
+  display:grid;
+  background-image: url(images/g3.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+/*Header image */
+div.header {
+  background-image: url(images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:300px;
+}
+/* Navigation bar configuration */
+div.nav{
+  display:flex;
+  width:100%;
+   }
+/*Slideshow configuration*/
+.slideshow-container {
+  width: 100%;
+  margin:auto;
+}
+/*Dropdown Menu */
+.dropdown-content {
+  display: none;
+  background-color: #d2d2d2;
+  position:absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  color:#7e7e7e;
+}
+/*List configuration */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  width:100%;
+  text-indent:70px;
+}
+ul.left{
+  list-style-type: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  line-height:200%;
+}
+li {
+  float: left;
+  text-align:left;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align:left;
+}
+li.dropdown {
+  display:inline-block;
+  float:right;
+  text-align:left;
+}
+li a, .dropbtn { 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+/*table and table properties */
+table {
+  width: 100%;
+  margin:auto;
+}
+th {
+  background-color:red;
+  color: white;
+  padding:20px;
+}
+td{
+  background-color: #F5FFFA;
+  color: black;
+  padding:10px;
+}
+/*Contact form box configuration */
+textarea {
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:7px;
+  box-sizing: border-box;
+  margin-top:6px;
+  margin-bottom:16px;
+  resize:vertical;
+  height:300px;
+  width:300px;
+}
+input[type=search] { 
+  border:1px solid #ccc;
+  border-radius:7px;
+  margin-top:6px;
+  margin-bottom:16px;
+  width:auto;
+  height:30px;
+}
+input[type=text] {
+  
+  border:1px solid #ccc;
+  border-radius:7px;
+  margin-top:6px;
+  margin-bottom:16px;
+  width:300px;
+  height:30px;
+}
+
+input[type = email]
+{
+  border:1px solid #ccc;
+  border-radius:7px;
+  margin-top:6px;
+  margin-bottom:16px;
+  width:300px;
+  height:30px;
+}
+input[type=number] {
+  border:1px solid #ccc;
+  border-radius:7px;
+  margin-top:6px;
+  margin-bottom:16px;
+  width:300px;
+  height:30px;
+}
+input[type=submit] 
+{
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin:auto;
+}
+input[type=send]
+{
+  background-color:#3b3bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin:auto; 
+}
+input[type=submit]:hover {
+  background-color: #8B0000;
+}
+/* Different div containers */
+div.container{
+  display:grid;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin:auto;
+  margin-bottom:20px;
+  width:80%;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+div.social {
+  display:grid;
+  width:80%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin:auto;
+  line-height:150%;
+  opacity:0.8; 
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+div.coursebox {
+  display:grid;
+  background-color:#f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  width:80%;
+  margin:auto;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+div.courses {
+  display:grid;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:80%;
+  margin:auto;
+  line-height:150%;
+  opacity:0.8;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+div.heading {
+  font-size:30px;
+  font-weight: bold;
+}
+
+div.center{
+  display:grid;
+  text-align:center;
+}
+
+div.right{
+  display:grid;
+  text-align:right;
+}
+div.grid {
+  display:grid;
+  grid-template-columns: 800px 100px 500px;
+  width:100%;
+  background-color: white;
+  padding:20px;
+}
+div.custname {
+  text-align:right;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+div.white{
+  display:grid;
+  grid-column-gap:20px;
+  width:90%;
+  border-radius:25px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 2px solid black;
+  padding: 20px;
+  background-color: white;
+  margin-left:20px;
+  margin-right:20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+div.customer1 {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  background-color:white;
+  margin:auto;
+  margin-bottom:50px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius:25px;
+  padding:40px;
+  width:90%;
+}
+div.roundbox {
+  display:grid;
+  background-color:white;
+  width:95%;
+  margin:auto;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size:25px;
+  border-top-right-radius:25px;
+  border-top-left-radius:25px;
+}
+/* Footer */
+div.footer {
+  display:grid;
+  grid-auto-rows:20px;
+  width: 100%;
+  background-image:url("images/music.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:20px;
+  line-height:100%;
+  margin-top:40px;  
+}
+div.wrap{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-row-gap:40px;
+}
+div.wrapper {
+  display:grid;
+  grid-template-columns:20% 80%;
+  background-color: white;
+  width:100%;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  margin-top:20px;
+  padding:20px;
+}
+div.event {
+  display:grid;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:80%;
+  line-height:150%;
+  margin:auto;
+  margin-top:20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+div.leftbox {
+  display:grid;
+  grid-auto-rows:20px 20px;
+  grid-row-gap:20px;
+  background-color:#f2f2f2;
+  padding:20px;
+  margin-right:20px;
+  margin-top:20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+div.call{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width:100%;
+  padding:20px;
+  background-color: #ececec;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+div.chat {
+  display:grid;
+  background-color:white;
+   border-right: 20px solid #ececec;
+}
+/*Images */
+img.customer {
+  border-radius:150px;
+  width:150px;
+  height:150px;
+  margin:auto; 
+}
+img.images {
+  width:100%;
+  border-radius:10px;
+  height:600px;
+}
+img.gallery {
+  display:grid;
+  height: 600px;
+  width:80%;
+  margin-bottom:20px;
+  padding:20px;
+  border-radius:25px;
+}
+img.contact{
+  display:grid;
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height:600px;
+}
+/*Social media handles */
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width:200px;
+   padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+  margin:auto;
+  display:grid;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width:200px;
+   padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+  margin:auto;
+  display:grid;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width:200px;
+   padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+  margin:auto;
+  display:grid;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+/*link colors*/
+.active1 {
+  background-color: red;
+}
+a.black{
+  color:black;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  text-decoration:none;
+  font-size:15px;
+}
+/*Media Queries*/
+@media screen and (max-width:680px)
+{
+  div.container{
+   display:grid;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-left:20px;
+  margin-bottom:20px;
+  width:40%;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+}
+@media screen and (max-width:680px)
+{
+  img.contact{
+   width:30%;
+ }
+}
+
+@media screen and (max-width:680px)
+{
+  img.contact{
+   width:100%
+ }
+}
+@media screen and (max-width:680px){
+  div.grid {
+  display:grid;
+  grid-template-columns: 400px 100px 200px;
+  width:100%;
+  background-color: white;
+  padding:20px;
+}
+}
+@media screen and (max-width:680px)
+{
+  div.grid {
+  display:grid;
+  grid-template-columns: 200px 50px 100px;
+  width:100%;
+  background-color: white;
+  padding:20px;
+}
+}
+@media screen and (max-width:680px)
+{
+  div.wrapper{
+ display:grid;
+  grid-template-columns:40% 60%;
+  background-color: white;
+  width:100%;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  margin-top:20px;
+  padding:20px;
+}
+}
+@media screen and (max-width:680px)
+{
+div.roundbox {
+  display:grid;
+  background-color:white;
+  width:80%;
+  margin-bottom:10px;
+  margin-left:20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size:25px;
+  border-top-right-radius:25px;
+  border-top-left-radius:25px; 
+  }
+}
+@media screen and (max-width:680px)
+{
+div.customer1 {
+  display:grid;
+  grid-template-columns:1fr;
+  background-color:white;
+  margin-left:20px;
+  margin-bottom:50px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius:25px;
+  padding:10px;
+  width:80%
+}
+}
+@media screen and (max-width:680px)
+{
+div.courses {
+  display:grid;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width:80%;
+  margin-left:10px;
+  line-height:150%;
+  opacity:0.8;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+}
+@media screen and (max-width:680px)
+{
+
+div.coursebox{
+  display:grid;
+  background-color:#f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  width:100%;
+  margin-left:10px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+  }
+}
+
+@media screen and (max-width:680px)
+{
+  table {
+  width: 30%;
+  margin-left:10px;
+}
+th {
+  background-color:red;
+  color: white;
+  padding:5px;
+  width:30%;
+}
+td{
+  background-color: #F5FFFA;
+  color: black;
+  padding:5px;
+  width:30%
+}
+}
+@media screen and (max-width:680px)
+{
+div.social {
+  display:none;
+}
+}
+@media screen and (max-width:680px)
+{
+  div.header{
+    background-image: none;
+  }
+}
+@media screen and (max-width:680px)
+{
+  div.nav{
+   display:flex;
+   flex-direction: column;
+
+  }
+}
+@media screen and (max-width:680px)
+{
+  img.images{
+   display:grid;
+   width:100%;
+   height:300px;
+   margin-left:20px;
+  }
+}
+@media screen and (max-width:680px)
+{
+  .mySlides{
+   display:grid;
+   width:100%;
+   margin-bottom:20px;
+  }
+}
+@media screen and (max-width:680px)
+{
+  div.container{
+    display:grid;
+   margin-top:20px;
+   width:80%;
+ }
+}
+@media screen and (max-width:680px)
+{
+  div.footer{
+   margin-top:100px;
+   width:100%;
+ }
+}

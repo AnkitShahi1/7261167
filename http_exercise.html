@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>HTTP and Security lab exercise</title>
+   <meta charset="utf-8" />
+   <meta name="author" content="Ankit Shahi" />
+   <meta name="description" content="HTML5 lab exercises" />
+   <link rel = stylesheet href = "../website/style.css">
+</head>
+<body>
+	<div class = "container">
+<h1>1. What is the Hypertext Transfer Protocol (HTTP)?</h1>
+<h2>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response.
+</h2><br>
+<h1>2. Why is HTTP called a stateless protocol?</h1>
+<h2>HTTP is called a stateless protocol because the server does not keep any data(state) between two requests.</h2><br>
+<h1>3. Describe the three phases of establishing a session using client-server protocols such as HTTP.</h1>
+<h2>In client-server protocols, like HTTP, sessions consist of three phases:
+
+The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP).
+The client sends its request, and waits for the answer.
+The server processes the request, sending back its answer, providing a status code and appropriate data.
+</h2><br>
+<h1>4. Describe the parameters on a get and post request.</h1>
+<h2>Get and Post methods are used to transfer data from client to server in HTTP protocol. Get carries request parameter appended in URL string while Post carries request parameter in message body which makes it more secure way of transferring data from client to server in http protocol.</h2><br>
+<h1>5. What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h1>
+<h2>HTTP response status codes indicate whether a specific HTTP request has been succesfully completed. <br>
+	Response status code 200 indicates that the request has has been successful. <br>
+Response status code 404 indicates that the server is not able to find the requested resource i.e the URL is not recognized. </h2><br>
+<h1>6. What are HTTP cookies? Give an example.</h1>
+<h2>HTTP cookies are small pieces of data that a server sends to the user's web browser. The browser may store it and send it back with later requests to the same server. For example : a session cookie, which only exists in temporary memory as the user navigates a website. Session cookies expire or are deleted when the user closes the web browser.</h2><br>
+<h1>7. Why are cookies a security issue?</h1>
+<h2> Cookies can be a security issue because they can be hijacked, and hackers can enable cookies to access your browsing sessions.</h2><br>
+<h1>8. Describe session hijacking and XSS.</h1>
+<h2>Session hijacking refers to exploitation of a valid computer session aka a session key to gain unauthorized access to information or services in a computer system.<br>
+XSS or Cross Site Scripting is a type of security vulnerability that allows attackers to inject client-side scripts into web pages viewed by other users.</h2><br>
+<h1>9. Describe Cross-site request forgery(CSRF)</h1>
+<h2> Cross-site request forgery is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated. If the victim is a normal user, a successful CSRF attack can force the user to perform state changing requests like transferring funds, changing their email address, and so forth. If the victim is an administrative account, CSRF can compromise the entire web application.</h2><br>
+<h1>10. What are Cross-site HTTP requests (CORS) and what requests use CORS?</h1>
+<h2>	CORS is an HTTP header based mechanism that allows a server to indicate any other origins(domain,scheme, or port) than its own from which a browser should permit loading of resources. <br>
+The following requests use CORS: 
+-Invocations of the XMLHttpRequest or Fetch APIs, as discussed above.<br>
+-Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.<br>
+-WebGL textures.<br>
+-Images/video frames drawn to a canvas using drawImage().<br>
+-CSS Shapes from images.
+</h2>
+</div>
+Go back to <a href = "../main.html"> main </a>page.
+</body>
+</html>

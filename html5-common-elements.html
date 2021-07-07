@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Ankit Shahi" content="Common Elements" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Common Elements</title>
+</head>
+<body>
+	Click <a href= "../main.html">here</a>to go to main page.
+    <nav>
+        <ul>
+           <li>
+              <a href="html5-structural-elements.html">HTML5 Structural elements</a>
+           </li>
+           <li><a href="html5-validation.html">HTML5 Validation</a></li>
+           
+        </ul>
+     </nav>
+ 
+                  
+
+    <figure>
+        <img src = "images/star.svg" alt="Example SVG image" />SVG Image 
+        <img src = "images/star.png" alt="Example PNG image" />PNG Image
+        <figcaption style = "margin-top:20px">SVG and PNG format comparison.</figcaption>
+      </figure>
+
+ 	<h1>Common HTML Elements</h1>
+
+     <!-- Divisions -->
+     <h2>Div</h2>
+     <div id="div-example" class="highlight">
+        <p>Any number of element to be grouped into one division</p>
+     </div>
+
+     <!-- Span -->
+     <h2>Span</h2>
+     <p>The following is part of a paragraph <span class="highlight">wrapped in a span element</span> so that in can be selected.</p>
+
+     <!-- Block Quotes -->
+     <h2>Block Quotes</h2>
+     <blockquote cite="http://developer.mozilla.org">
+        <p>This is a quotation taken from the Mozilla Developer Center.</p>
+     </blockquote>
+
+     <!-- Inline quotes -->
+     <h2>Inline Quotes</h2>
+    <p>In the new world of semantic markup, 
+    <q cite="http://ebbi.github.io">
+        Separation of content from how it is presented is key to modern web development.
+    </q>
+    </p>
+
+    <!-- Forms -->
+    <h2>Forms</h2>
+    <form method="get" action="https://www.facebook.com">
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" />
+     
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" />
+     
+        <button type="submit" value="submit">Sign in</button>
+     
+     </form>
+
+     <!-- Form Widgets -->
+     <h2>Form Widgets</h2>
+     <p>Choose your favourite colour:
+        <input type="radio" name="colour" value="red" checked="checked" /> Red
+        <input type="radio" name="colour" value="green" /> Green
+        <input type="radio" name="colour" value="blue" /> Blue
+     </p>
+     <p>Which is your favourite pass time?
+        <input type="radio" name="hobby" value="travel" /> Travel
+        <input type="radio" name="hobby" value="food" /> Food
+        <input type="radio" name="hobby" value="sky diving" /> Sky Diving
+     </p>
+
+     <!-- Check Boxes -->
+     <h3>Check Boxes</h3>
+     <p>Select your favourite colour(s):
+        <input type="checkbox" name="red" value="true" checked="checked"> red
+        <input type="checkbox" name="green" value="true" /> green
+        <input type="checkbox" name="blue" value="true"/> blue
+     </p>
+
+     <!-- File picker -->
+     <h3>File Pickers</h3>
+     <form method="post" enctype="multipart/form-data" action="my_server_prog">
+        <p>
+           <label for="fileupload">Please choose a file to upload: </label>
+           <input type="file" id="fileupload" name="file1" />
+        </p>
+     </form>
+</body>
+</html>
